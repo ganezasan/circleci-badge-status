@@ -4,8 +4,7 @@ jobs:
     docker:
       - image: circleci/node:latest
     steps:
-      - checkout
-      - run: echo "Success"
+      - run: exit 1
 workflows:
   version: 2
   workflow:
