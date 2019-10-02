@@ -9,5 +9,8 @@ workflows:
   version: 2
   workflow:
     jobs:
-      - build:
+      - onhold:
           type: approval
+      - build:
+          requires:
+            - onhold
